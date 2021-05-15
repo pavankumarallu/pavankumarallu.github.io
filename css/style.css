@@ -310,19 +310,103 @@ header .nav_bar ul li a:hover{
     background:var(--yellow);
 }
 
+.Technical .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.Technical .box-container .box{
+    height: 30rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+    box-shadow:  6px 6px 16px #7d7d7d,
+             -6px -6px 16px #ffffff;
+
+}
+.Technical .box-container .box h1{
+	font-size: 3.5rem;
+    color:#dd3769;
+    text-align: center;
+    padding-top: 1.5rem;
+    
+
+}
+
+.Technical .box-container .box .img img{
+    height: 100%;
+	width: 100%;
+	object-fit: cover;
+	
+}
+
+.Technical .box-container .box:hover{
+    transform: scale(1.1);
+}
 
 
+.projects .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
 
+.projects .box-container .box{
+    height: 30rem;
+    width:40rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+    box-shadow:  6px 6px 16px #7d7d7d,
+             -6px -6px 16px #ffffff;
 
+}
+.projects .box-container .box h1{
+	font-size: 2rem;
+    color:#dd3769;
+    text-align: center;
+    padding-top: 1.5rem;
+    
 
+}
 
+.projects .box-container .box .img img{
+    height: 100%;
+	width: 100%;
+	object-fit: cover;
+	
+}
 
+.projects .box-container .box:hover{
+    transform: scale(1.1);
+}
+.projects .box-container a{
+	display: block;
+	padding: 1rem 2rem;
+	margin: 1.5rem 0;
+	background:  #e44071;
+	color:#fff;
+	font-size: 2rem;
+	border-radius:5rem;
+	text-decoration: none;
+	box-shadow: inset 5px 5px 10px #902847,inset -5px -5px 10px #ff589b;
+}
+.projects .box-container a:hover{
+	
+    background:  #10b684;
+    color:#fff;
 
-
-
-
-
-
+}
 
 
 
@@ -371,7 +455,7 @@ header .nav_bar ul li a:hover{
  
  }
 
-@media (max-width:400px){
+@media (max-width:350px){
 
     header{
         width: 100vw;
@@ -385,10 +469,9 @@ header .nav_bar ul li a:hover{
         width: 100%;
     }
  
- 	.education .box-container .box
- 	{
+ 	.education .box-container .box{
     	width:100%;
 	}
-   
+	
 
  }
