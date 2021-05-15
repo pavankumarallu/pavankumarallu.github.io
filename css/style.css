@@ -244,12 +244,14 @@ header .nav_bar ul li a:hover{
     width:20rem;
     height: 20rem;
     background:#10b684;
-    text-align: center;
     padding: 1rem;
    
 }
 
-
+.about .row a{
+	text-align: center;
+	margin-top: 10rem
+}
 
 
 
@@ -303,3 +305,28 @@ header .nav_bar ul li a:hover{
 	}
   
 }
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:350px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter img{
+        width: 100%;
+    }
+ 
+   
+
+ }
