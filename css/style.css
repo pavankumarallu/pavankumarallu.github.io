@@ -186,6 +186,68 @@ header .nav_bar ul li a:hover{
     color: #fff;
 
 }
+.About .row img{
+	height: 17rem;
+	width: 17rem;
+	border-radius: 10%;
+	object-fit: cover;
+	margin-bottom: 1rem;
+	
+	
+	
+}
+
+
+.heading{
+	text-align: center;
+	margin: 0 6rem;
+	font-size: 4rem;
+	padding: 1rem;
+	border-bottom: .1rem solid #f53a72;
+	color: #f53a72;
+
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:#dd3769;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color:#000;
+    padding:0 .5rem;
+}
+
+.about .row .counter{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter img{
+    width:20rem;
+    height: 20rem;
+    background:#10b684;
+    text-align: center;
+    padding: 1rem;
+   
+}
 
 
 
