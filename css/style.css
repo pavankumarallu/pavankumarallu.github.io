@@ -371,7 +371,7 @@ header .nav_bar ul li a:hover{
  
  }
 
-@media (max-width:350px){
+@media (max-width:400px){
 
     header{
         width: 100vw;
@@ -385,6 +385,10 @@ header .nav_bar ul li a:hover{
         width: 100%;
     }
  
+ 	.education .box-container .box
+ 	{
+    	width:100%;
+	}
    
 
  }
