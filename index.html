@@ -269,12 +269,12 @@
 
 			    </div>
 
-			    <form action="">
+			    <form id="my-form" action="https://formspree.io/f/xeqvaznd" method="POST">
 
 			        <input type="text" placeholder="name" class="box">
 			        <input type="email" placeholder="email" class="box">
-			        <input type="text" placeholder="project" class="box">
-			        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+			        <input type="text" placeholder="project" class="box" type="_replyto">
+			        <textarea name="message" id="message" cols="30" rows="10" class="box message" placeholder="message"></textarea>
 			        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
 
 			    </form>
@@ -326,6 +326,28 @@
     backSpeed:50,
     loop:true
   });
+</script>
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
 </script>
 
 	
