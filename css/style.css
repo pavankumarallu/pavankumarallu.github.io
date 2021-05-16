@@ -162,6 +162,30 @@ header .nav_bar ul li a:hover{
 	font-weight: 20rem;
 	font-style: bold;
 }
+.home .share{
+    position: absolute;
+    left:50%; bottom:5rem;
+    transform: translateX(-50%);
+    display: flex;
+    padding:1rem;
+    border-radius: 1rem;
+    transition: .2s linear;
+}
+.home .share a{
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    padding:1rem 2rem;
+    margin:1rem;
+    color:#dd3769;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.home .share a:hover{
+    background:#dd3769;
+    color:#ffffff;
+    transform: scale(1.1);
+}
 
 .btn{
 	padding: 1rem;
@@ -390,7 +414,14 @@ header .nav_bar ul li a:hover{
 .projects .box-container .box:hover{
     transform: scale(1.1);
 }
-.projects .box-container a{
+.projects .box-container .box a{
+	text-decoration: none;
+	font-size: 2rem;
+    color:#dd3769;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.projects .box-container .ref a{
 	display: block;
 	padding: 1rem 2rem;
 	margin: 1.5rem 0;
@@ -401,12 +432,83 @@ header .nav_bar ul li a:hover{
 	text-decoration: none;
 	box-shadow: inset 5px 5px 10px #902847,inset -5px -5px 10px #ff589b;
 }
-.projects .box-container a:hover{
+.projects .box-container .ref a:hover{
 	
     background:  #10b684;
     color:#fff;
 
 }
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#fff;
+    color:#dd3769;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+    box-shadow: inset 5px 5px 10px #919191,
+            inset -5px -5px 10px #ffffff;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:#eee;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color:var(--yellow);
+}
+.top{
+    position: fixed;
+    
+    color: #dd3769;
+    bottom:5rem; right: 6rem;
+    z-index: 100;
+    display: none;
+}
+
 
 
 
