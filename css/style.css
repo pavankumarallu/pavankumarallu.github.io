@@ -179,6 +179,7 @@ header .nav_bar ul li a:hover{
     color:#dd3769;
     font-size: 2rem;
     border-radius: 1rem;
+    text-decoration: none;
 }
 
 .home .share a:hover{
